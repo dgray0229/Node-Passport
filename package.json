@@ -2,7 +2,7 @@
   "name": "nodepassport",
   "version": "1.0.0",
   "description": "Node with Passport project",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,18 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^0.8.7",
-    "cookie-parser": "^1.4.3",
-    "mongodb": "^2.2.10"
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "*",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
   }
 }
