@@ -1,8 +1,37 @@
 <html>
 <head>
     <title>LoginApp</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-{{{body}}}
+
+
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" class="active"><a href="/">Dashboard</a></li>
+                <li role="presentation"><a href="/users/login">Login</a></li>
+                <li role="presentation"><a href="/users/register">Register</a></li>
+                <li role="presentation"><a href="/users/logout">Logout</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">LoginApp</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            {{{body}}}
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2016 Devin Gray LLC</p>
+    </footer>
+
+</div> <!-- /container -->
+
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
