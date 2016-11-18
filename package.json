@@ -10,7 +10,7 @@
   "author": "Devin Gray",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^0.8.7",
+    "bcryptjs": "^2.3.0",
     "body-parser": "*",
     "connect-flash": "*",
     "cookie-parser": "*",

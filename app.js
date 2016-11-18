@@ -1,21 +1,21 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var exphbs = require('express-handlebars');
-var expressValidator = require('express-validator');
-var flash = require('connect-flash');
-var session = require('express-session');
-var passport = require('passport');
-var LocalStrategy = require('passport-local').Strategy;
-var mongo = require('mongodb');
-var mongoose = require('mongoose');
+var express = require('express'),
+    path = require('path'),
+    cookieParser = require('cookie-parser'),
+    bodyParser = require('body-parser'),
+    exphbs = require('express-handlebars'),
+    expressValidator = require('express-validator'),
+    flash = require('connect-flash'),
+    session = require('express-session'),
+    passport = require('passport'),
+    LocalStrategy = require('passport-local').Strategy,
+    mongo = require('mongodb'),
+    mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/loginapp');
 var db = mongoose.connection;
 
 // Routes
-var routes = require('./routes/index');
-var users = require('./routes/users');
+var routes = require('./routes/index'),
+    users = require('./routes/users');
 
 // Init App
 var app = express();
